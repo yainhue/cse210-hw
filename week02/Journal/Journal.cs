@@ -50,13 +50,14 @@ public class Journal
     public void SaveToFile(Journal myJournal)
     {
         Console.WriteLine("Please enter a name for your file (no file extension requiered): ");
-        string fileName=Console.ReadLine();
+        string fileName = Console.ReadLine();
         using (StreamWriter outputfile = new StreamWriter($"{fileName}.csv"))
         {
-            outputfile.WriteLine("date|promptText|responseText");
+            outputfile.WriteLine("_shortName|_description|_points|_isComplete|_bonus|_target|_amountCompleted");
             foreach (Entry e in myJournal._entries)
             {
                 outputfile.WriteLine($"{e._date}|'{e._promptText}'|'{e._responseText}'|");
+                $"EternalGoal:{_shortName},{_description},{_points},{_bonus},{_target},{_amountCompleted}";
             }
         }
         Console.WriteLine($"Saved correctly to '{fileName}.csv'!");
@@ -69,7 +70,7 @@ public class Journal
         string[] lines = System.IO.File.ReadAllLines($"{fileName}.csv");
 
         //skip the header (first line)
-        string header = lines[0]; 
+        string header = lines[0];
 
         // foreach (string line in lines)
         // loops through the rest of the lines

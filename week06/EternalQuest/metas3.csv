@@ -1,0 +1,5 @@
+SCORE = 0
+type|_shortName|_description|_points|_isComplete|_bonus|_target|_amountCompleted
+SimpleGoal:|veni q te explico|jajaj no se|50|False
+EternalGoal:|el jueves moron|o banfield|50
+ChecklistGoal:|the space program|get it together for..|10|False|999|5|0

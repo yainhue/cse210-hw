@@ -1,0 +1,4 @@
+SCORE = 0 - type|_shortName|_description|_points|_isComplete|_bonus|_target|_amountCompleted
+SimpleGoal:|hola1|chau2|3|False
+EternalGoal:|make something happen|el programa espacial|80
+ChecklistGoal:|minecraft|yuvael meza|1|False|30|5|0

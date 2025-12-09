@@ -1,0 +1,5 @@
+SCORE = 0
+_shortName|_description|_points|_isComplete|_bonus|_target|_amountCompleted
+SimpleGoal:|hola|amigo|1|False
+EternalGoal:|escritura|leer las todosnlos dias|80
+ChecklistGoal:|hablar con alguien|conversacion agradable|100|False|300|5|0
